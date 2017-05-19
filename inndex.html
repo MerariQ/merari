@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Sitio de prueba">
+    <meta name="author" content="Sandra Merari Quiroz ">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Sandra Merari Quiroz Martínez</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/estiloss.css" rel="stylesheet">
+    
+
+  </head>
+ <style>
+        a{
+            color:#fff;
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        span.reference{
+            position:fixed;
+            left:10px;
+            bottom:10px;
+            font-size:13px;
+            font-weight:bold;
+        }
+        span.reference a{
+            color:#fff;
+            text-shadow:1px 1px 1px #000;
+            padding-right:20px;
+        }
+        span.reference a:hover{
+            color:#ddd;
+            text-decoration:none;
+        }
+
+    </style>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Merari </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#iniciol">Inicio</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="encabezado">
+        <h1>Sandra Merari</h1>
+        <p class="lead">Licenciado en Diseño y Comunicación Visual
+<br>FACULTAD DE ARTES Y DISEÑO UNAM</p>
+      </div>  
+       
+       
+    
+       
+       
+        <p>&copy;
+        Sandra Merari Quiroz 2017</p>
+            
+
+    </div>
+    
+    <div class="section white" id="trabajos">
+            <h2>Trabajos</h2>
+            
+               <section class="lead">
+    <div class="row">
+      <figure class="col-sm-6">
+        <img src="image/0000.jpg" class="img-responsive">
+    	</figure>
+    </div>
+  </section>
+           
+            <p>
+                El sistema solar modelado en realidad virtual 
+
+            </p>
+            
+                <li><a href="#inicio">Inicio</a></li>
+                <li>Trabajos</li>
+                <li><a href="#contacto">Contacto</a></li>
+          
+        </div>
+        <div class="section black" id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                Una pequeña muestra de las calles de la ciudad de Venecia
+
+            </p>
+            <ul class="nav">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li>3</li>
+            </ul>
+        </div>
+    
+    
+    
+    
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+        </script>
+  </body>
+</html>

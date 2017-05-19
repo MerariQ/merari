@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Sitio de prueba">
+    <meta name="author" content="Sandra Merari Quiroz ">
+    <link rel="icon" href="favicon.ico">
+     <link rel="stylesheet" href="css/pannellum.css"/>
+    <script type="text/javascript" src="js/pannellum.js"></script>
+     <style>
+        body{background-image: url("logoou.png"); background-repeat: no-repeat;}
+        image{width: 500px; height: 334px; border-left: 10px;}
+        h2{text-align: center; font-family: sans-serif; color: aliceblue;}
+         h4{text-align: center; font-family: sans-serif; color:aliceblue;}
+         p{text-align: center;font-family: sans-serif;}
+    #panorama {
+        width: 600px;
+        height: 400px;
+        margin: auto;
+    }
+    </style>
+
+    <title>Sandra Merari Quiroz Martínez </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/estilos.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Merari</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">Inicio</a></li>
+            <li ><a href="trabajos.html">Trabajos </a></li>
+            <li ><a href="multimedia.html">Multimedia </a></li>
+            <li class="active" ><a href="virtual.html">Recorrido Virtual </a></li>
+            <li ><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="virtual">
+      
+      <a name="virtual"></a>
+       <div class="virtual">
+       
+           <h2>Universidad Nacional Autónoma de México</h2>
+    <h4>Facultad de Artes y Diseño</h4>
+    <p>Recorrido virtual con panomaras de 360°</p>
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {   
+    "default": {
+        "firstScene": "Recorrido 360 FAD",
+        "author": "Sandra Quiroz",
+        "sceneFadeDuration": 1000,
+        "autoLoad": true,
+        "vaov": 90,
+        "haov": 360,
+        "hotSpotDebug": "true",
+        "autoRotate": -1
+    },
+
+    "scenes": {
+        "Recorrido 360 FAD": {
+            "title": "Entrada",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "panos/001.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 7.27,
+                    "yaw": 177.83,
+                    "type": "scene",
+                    "text": "Explanada",
+                    "sceneId": "Explanada",
+                }
+            ]
+        },
+
+        "Explanada": {
+            "title": "Explanada",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/002.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 4.55,
+                    "yaw": 114.71,
+                    "type": "scene",
+                    "text": "Aulas",
+                    "sceneId": "Aulas",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                {
+                    "pitch": -5.96,
+                    "yaw": -34.73,
+                    "type": "scene",
+                    "text": "Samotracia",
+                    "sceneId": "Centro",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+        
+        "Aulas": {
+            "title": "Aulas",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/003.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 1.46,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Explanada",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                
+                {
+                    "pitch": 3.28,
+                    "yaw": -159.19,
+                    "type": "scene",
+                    "text": "Aulas",
+                    "sceneId": "losA",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                
+            ]
+        },
+        
+        "losA": {
+            "title": "Aulas",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/004.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -1.20,
+                    "yaw": 52.76,
+                    "type": "scene",
+                    "text": "Empalayas",
+                    "sceneId": "Empalayas",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                 {
+                    "pitch": -9.12,
+                    "yaw": -40.27,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Aulas",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+            ]
+        },
+        
+        "Empalayas": {
+            "title": "Empalayas",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/05.jpg",
+            "hotSpots": [
+                {
+                   "pitch": -5.8,
+                    "yaw": -90,
+                    "type": "scene",
+                    "text": "Aulas",
+                    "sceneId": "losA",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                
+                {
+                    "pitch": -5.8,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Edificio S",
+                    "sceneId": "Pasillo",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+            ]
+        },
+        
+         "Pasillo": {
+            "title": "Edificio S",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/06.jpg",
+            "hotSpots": [
+                {
+                   "pitch": -5.8,
+                    "yaw": 50,
+                    "type": "scene",
+                    "text": "Cancha",
+                    "sceneId": "Cancha",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                
+                {
+                    "pitch": -5.8,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Empalayas",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+            ]
+        },
+        
+         "Cancha": {
+            "title": "Cancha",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/07.jpg",
+            "hotSpots": [
+                {
+                   "pitch": -5.8,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Pasillo",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                
+            
+            ]
+        },
+        
+         "Centro": {
+            "title": "Centro",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/08.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3.11,
+                    "yaw": 75.64,
+                    "type": "scene",
+                    "text": "Alfabeto",
+                    "sceneId": "Alfabe",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                {
+                    "pitch": -5.8,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Biblioteca",
+                    "sceneId": "Biblioteca",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                 {
+                    "pitch": -5.8,
+                    "yaw": -81.60,
+                    "type": "scene",
+                    "text": "Explanada",
+                    "sceneId": "Explanada",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+        
+        "Biblioteca": {
+            "title": "Biblioteca",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/09.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3.11,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Centro",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+        
+        "Alfabe": {
+            "title": "Alfabeto",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/10.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -7.87,
+                    "yaw": 116,
+                    "type": "scene",
+                    "text": "Senutre",
+                    "sceneId": "Senutre",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                
+                {
+                    "pitch": -7.32,
+                    "yaw": -54.19,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Centro",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+        
+         "Senutre": {
+            "title": "Senutre",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/011.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 4.55,
+                    "yaw": 137.85,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Salas",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                
+                {
+                    "pitch": 3,
+                    "yaw": -37.14,
+                    "type": "scene",
+                    "text": "Grafia",
+                    "sceneId": "Grafia",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+        
+        "Grafia": {
+            "title": "Grafia",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/012.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 6,
+                    "yaw": -60,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Senutre",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                 {
+                    "pitch": 2.51,
+                    "yaw": 77.14,
+                    "type": "scene",
+                    "text": "Talleres",
+                    "sceneId": "Talleres",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+        "Talleres": {
+            "title": "Talleres",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/014.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3.11,
+                    "yaw": -145,
+                    "type": "scene",
+                    "text": "Curva",
+                    "sceneId": "Curva",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                {
+                    "pitch": -5.8,
+                    "yaw": 50,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Grafia",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                },
+                {
+                    "pitch": -14.76,
+                    "yaw": 166,
+                    "type": "scene",
+                    "text": "Estacionamiento Maestros",
+                    "sceneId": "estacionamiento",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+        
+        "estacionamiento": {
+            "title": "Curva",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/015.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5.63,
+                    "yaw": -49.82,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Talleres",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                ]
+        },
+        "Curva": {
+            "title": "Curva",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "panos/013.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3.11,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "Regreso",
+                    "sceneId": "Talleres",
+                    "targetYaw": -20,
+                    "targetPitch": 5
+                }
+                 
+            ]
+        },
+    }
+});
+
+     </script>     
+        <p>&copy;
+        Sandra Merari Quiroz 2017</p>
+            
+       </div>
+       
+       
+        
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

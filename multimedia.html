@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Sitio de prueba">
+    <meta name="author" content="Sandra Merari Quiroz ">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Sandra Merari Quiroz Martínez </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/estilos.css" rel="stylesheet">
+    <script src="x3dom.js"></script>
+    <style>
+       h2{text-align: center; font-family: sans-serif;}
+         h4{text-align: center; font-family: sans-serif;}
+         p{text-align: center;font-family: sans-serif;}
+      </style>
+  </head>
+
+  <body style="background-color:#fff;">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Merari</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">Inicio</a></li>
+            <li ><a href="trabajos.html">Trabajos </a></li>
+            <li class="active"><a href="multimedia.html">Multimedia </a></li>
+            <li ><a href="virtual.html">Recorrido Virtual</a></li>
+            <li ><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      
+      <a name="multimedia"></a>
+      <h2>Animación Digital</h2>
+       <div class="multimedia">
+       
+
+       
+       <h4>Modelado en 3D con animación </h4>
+       <p>Sistema Solar</p>
+     
+        <x3d width='700px' height='500px'> 
+    <scene>
+    <background backUrl='texturas/espacio.jpg' bottomUrl='texturas/espacio.jpg' frontUrl='texturas/espacio.jpg' leftUrl='texturas/espacio.jpg' rightUrl='texturas/espacio.jpg' topUrl='texturas/espacio.jpg'></background>
+        <!empezamos con el sol¡>
+            <transform DEF='SSolar'> 
+            <shape>
+            <appearance>
+            <material diffuseColor='1 0 0'></material>    
+            <imageTexture url='texturas/sol.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere></sphere>   
+            </shape>
+        <!ahora creamos mercurio¡>
+            <transform translation='1.5 0 0'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/mercurio.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.1'></sphere>   
+            </shape>
+            </transform>
+         <!ahora creamos venus¡>
+            <transform translation='-1 0 -1.5'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/venus.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.25'></sphere>   
+            </shape>
+            </transform>
+         <!ahora creamos tierra¡>
+            <transform translation='-2 0 2.2'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/tierra.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.3'></sphere>   
+            </shape>
+            </transform>
+         <!ahora creamos marte¡>
+            <transform translation='-2.5 0 2.5'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/marte2.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.1'></sphere>   
+            </shape>
+            </transform>
+         <!ahora creamos jupiter¡>
+            <transform translation='2.8 0 3'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/jupiter.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.25'></sphere>   
+            </shape>
+            </transform>
+         <!ahora creamos saturno¡>
+            <transform translation='3 0 -3.2'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/saturno.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.3'></sphere>   
+            </shape>
+                <!anillos de saturno¡>
+                <shape>
+                <appearance>
+                <imageTexture url='texturas/anillos.png'></imageTexture>
+                </appearance>
+                <cylinder radio='0.3' height='0.001'></cylinder>
+                </shape>            
+            </transform>
+         <!ahora creamos urano¡>
+            <transform translation='-3.5 0 3.7'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/mercurio.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.10'></sphere>   
+            </shape>
+            </transform>
+         <!ahora creamos neptuno¡>
+            <transform translation='3.8 0 3.8'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/neptuno.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.15'></sphere>   
+            </shape>
+            </transform>
+         <!ahora creamos pluton¡>
+            <transform translation='3.9 0 -3.9'>
+            <shape>
+            <appearance>
+            <material diffuseColor='1 1 0'></material>    
+            <imageTexture url='texturas/pluton.jpg'>
+            </imageTexture>
+            </appearance>    
+            <sphere radius='0.08'></sphere>   
+            </shape>
+                <!-- Inicia la animacion-->
+    <timeSensor DEF='timer' cycleInterval='60' loop='true'>    
+    </timeSensor>
+    <orientationInterpolator 
+                    DEF='rotator' 
+                    key='0 0.5 1' 
+                    keyValue='0 1 0 0 
+                              0 1 0 3.14 
+                              0 1 0 6.28'>    
+    </orientationInterpolator>
+</transform>
+
+<ROUTE
+      fromNode='timer'
+      fromField='fraction_changed'
+      toNode='rotator'
+      toField='set_fraction'>
+</ROUTE>
+            
+<ROUTE
+      fromNode='rotator'
+      fromField='value_changed'
+      toNode='SSolar'
+      toField='set_rotation'>
+</ROUTE>
+          
+    
+    </scene>
+</x3d>
+          
+          
+        <p>&copy;
+        Sandra Merari Quiroz 2017</p>
+            
+       </div>
+       
+       
+        
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
